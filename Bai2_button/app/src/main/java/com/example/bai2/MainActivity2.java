@@ -18,7 +18,7 @@ public class MainActivity2 extends Activity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("sms://0332596846"));
                 startActivity(intent);
             }
         });
