@@ -29,8 +29,9 @@ public class MainActivity extends Activity {
             * */
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("sms:0332596846"));
-                intent.putExtra("sms_body", "Hi Qui"); // putExtra
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putExtra("ten", "Qui");
+                intent.putExtra("lop", "DHDTMT18ATT");
                 startActivity(intent);
             }
         });
