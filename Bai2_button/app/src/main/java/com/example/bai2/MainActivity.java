@@ -29,9 +29,9 @@ public class MainActivity extends Activity {
             * */
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_PICK);
-                intent.setType(ContactsContract.Contacts.CONTENT_TYPE);
-                startActivityForResult(intent, 1234);
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("sms:0332596846"));
+                intent.putExtra("sms_body", "Hi Qui"); // putExtra
+                startActivity(intent);
             }
         });
 
