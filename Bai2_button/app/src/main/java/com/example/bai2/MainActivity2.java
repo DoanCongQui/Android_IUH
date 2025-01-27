@@ -14,7 +14,7 @@ public class MainActivity2 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        btnNext = findViewById(R.id.button);
+        btnNext = findViewById(R.id.button2);
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
